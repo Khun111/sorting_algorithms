@@ -5,16 +5,19 @@
  */
 void insertion_sort_list(listint_t **list)
 {
+	/*Declare variables*/
 	listint_t *current;
 	listint_t *temp;
-
+/*Validate arguments*/
 	if (!list || !*list)
 		return;
-	else
-		current = *list;
+/*Keep track of the current node*/
+	current = *list;
 
+/*Iterate through the list*/
 	while (current->next)
 	{
+/*Using temp to keep track of next element, swap if the current > next*/
 		if (current->n > current->next->n)
 		{
 			temp = current->next;
