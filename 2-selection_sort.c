@@ -9,7 +9,7 @@ void selection_sort(int *array, size_t size)
 /*Declare variables*/
 	size_t i, temp, j, min;
 
-	if (size < 2)
+	if (!array || size < 2)
 		return;
 /*Iterate through the entire array*/
 	for (i = 0; i < size - 1; i++)
