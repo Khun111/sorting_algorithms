@@ -30,7 +30,7 @@ void counting_sort(int *array, size_t size)
 	for (i = 0; i < size; i++)
 		count[array[i]]++;
 /* Store cumulative sum of elements */
-	for (i = 0; i <= maxi; i++)
+	for (i = 1; i <= maxi; i++)
 		count[i] += count[i - 1];
 	print_array(array, maxi + 1);
 /* Allocate memory for array to ise for sorting */
@@ -40,7 +40,7 @@ void counting_sort(int *array, size_t size)
 /* Move the ele from arr to the sorted arr using the count val -1 as index */
 	for (i = 0; i < size; i++)
 	{
-		sort[count[array[i]]--] = array[i];
+		sort[count[array[i]] - 1] = array[i];
 		count[array[i]]--;
 	}
 /* Copy sorted array to original */
