@@ -27,4 +27,9 @@ int partition(int *array, size_t size, int start, int end);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size);
+void swap_nodes(listint_t *node1, listint_t *node2, listint_t **list);
+void cocktail_sort_list(listint_t **list);
+void merge_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
+void sift_down(int *array, int size, int root);
 #endif /* SORT_H */
