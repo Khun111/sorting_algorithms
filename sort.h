@@ -32,4 +32,5 @@ void cocktail_sort_list(listint_t **list);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void sift_down(int *array, int size, int root);
+void radix_sort(int *array, size_t size);
 #endif /* SORT_H */
